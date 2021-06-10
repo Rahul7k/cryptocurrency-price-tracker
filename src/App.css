@@ -26,9 +26,12 @@
 }
 
 .coin-text {
-  margin-top: 64px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 48px;
   text-align: center;
+  background-color: #162f3f;
+  padding: 15px 25px 15px 25px;
+  border-radius: 25px;
 }
 
 .coin-input {
