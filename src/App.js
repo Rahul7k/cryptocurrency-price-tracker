@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text">Search a Cryptocurrency</h1>
+        <h2 className="coin-text">Search a Cryptocurrency</h2>
         <form>
           <input type="text" placeholder="Search" className="coin-input" onChange={handleChange} />
         </form>
@@ -37,10 +37,10 @@ function App() {
               <p className="content-symbol">Symbol</p>
             </div>
             <div className="content-data">
-              <p className="content-price">Price</p>
-              <p className="content-volume">Volume</p>
+              <p className="content-price">Current Price</p>
+              <p className="content-volume">Total Volume</p>
               <p className="content-percent">Price Change</p>
-              <p className="content-marketcap">Market Cap</p>
+              <p className="content-marketcap">Market Cap Rank</p>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ function App() {
               name={coin.name}
               image={coin.image}
               symbol={coin.symbol}
-              marketcap={coin.market_cap}
+              marketcaprank={coin.market_cap_rank}
               price={coin.current_price}
               priceChange={coin.price_change_percentage_24h}
               volume={coin.total_volume}

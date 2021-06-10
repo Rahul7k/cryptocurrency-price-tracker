@@ -8,7 +8,7 @@ const Coin = ({
   price,
   volume,
   priceChange,
-  marketcap,
+  marketcaprank,
 }) => {
   return (
     <div>
@@ -20,15 +20,15 @@ const Coin = ({
             <p className="coin-symbol">{symbol}</p>
           </div>
           <div className="coin-data">
-            <p className="coin-price">Rs{price}</p>
-            <p className="coin-volume">Rs{volume.toLocaleString()}</p>
+            <p className="coin-price">Rs{" "}{price.toLocaleString()}</p>
+            <p className="coin-volume">Rs{" "}{volume.toLocaleString()}</p>
             {priceChange < 0 ? (
               <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
             ) : (
               <p className="coin-percent green">{priceChange.toFixed(2)}%</p>
             )}
-            <p className="coin-marketcap">
-              Rs{marketcap.toLocaleString()}
+            <p className="coin-marketcaprank">
+              {marketcaprank.toLocaleString()}
             </p>
           </div>
         </div>
